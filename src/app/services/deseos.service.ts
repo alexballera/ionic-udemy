@@ -9,6 +9,9 @@ export class DeseosService {
   listas: Lista[] = [];
 
   constructor() {
-    console.log('Servicio inicializado')
+    const lista1 = new Lista('Terminar curso Angular');
+    const lista2 = new Lista('Volverme Front End');
+
+    this.listas.push(lista1, lista2);
   }
 }
